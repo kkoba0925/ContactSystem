@@ -1,8 +1,30 @@
 <?php
 session_start();
-//変数代入または初期化
+//変数
 $name = isset( $_SESSION[ 'company' ] ) ;
-//エラーを初期化
+$name = isset( $_SESSION[ 'family_name' ] ) ;
+$name = isset( $_SESSION[ 'first_name' ] ) ;
+$name = isset( $_SESSION[ 'family_kana' ] ) ;
+$name = isset( $_SESSION[ 'first_kana' ] ) ;
+$name = isset( $_SESSION[ 'postal_code1' ] ) ;
+$name = isset( $_SESSION[ 'postal_code2' ] ) ;
+$name = isset( $_SESSION[ 'postal_code3' ] ) ;
+$name = isset( $_SESSION[ 'pref' ] ) ;
+$name = isset( $_SESSION[ 'city' ] ) ;
+$name = isset( $_SESSION[ 'address' ] ) ;
+$name = isset( $_SESSION[ 'tel1' ] ) ;
+$name = isset( $_SESSION[ 'tel2' ] ) ;
+$name = isset( $_SESSION[ 'tel3' ] ) ;
+$name = isset( $_SESSION[ 'birth_era' ] ) ;
+$name = isset( $_SESSION[ 'birth_year' ] ) ;
+$name = isset( $_SESSION[ 'birth_month' ] ) ;
+$name = isset( $_SESSION[ 'birth_day' ] ) ;
+$name = isset( $_SESSION[ 'mailaddress' ] ) ;
+$name = isset( $_SESSION[ 'mailaddress' ] ) ;
+$name = isset( $_SESSION[ 'method' ] ) ;
+$name = isset( $_SESSION[ 'question' ] ) ;
+$name = isset( $_SESSION[ 'notes' ] ) ;
+//エラー
 $error_name = isset( $error['company'] ) ? $error['company'] : NULL;
 ini_set('display_errors',1);
 ?>
@@ -40,7 +62,7 @@ ini_set('display_errors',1);
           <td>
             <p>
               ｾｲ<input type="text" name="family_kana">
-              ﾒｲ<input type="text" name="family_kana">
+              ﾒｲ<input type="text" name="first_kana">
             </p>
           </td>
         </tr>
